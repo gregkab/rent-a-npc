@@ -205,6 +205,145 @@ footer {
     font-size: 0.9rem;
 }
 
+/* Social Proof Section */
+.social-proof {
+    padding: 40px 0;
+    background: rgba(0, 255, 153, 0.05);
+    border-top: 1px solid rgba(0, 255, 153, 0.2);
+    border-bottom: 1px solid rgba(0, 255, 153, 0.2);
+    text-align: center;
+}
+
+.trust-line {
+    font-family: 'Press Start 2P', monospace;
+    font-size: clamp(0.8rem, 2vw, 1rem);
+    color: var(--primary-green);
+    margin-bottom: 10px;
+}
+
+.deployment-line {
+    font-size: 1rem;
+    color: var(--accent-teal);
+    opacity: 0.8;
+}
+
+/* NPC Archetypes Section */
+.npc-archetypes {
+    padding: 80px 0;
+    background: rgba(43, 0, 58, 0.3);
+}
+
+.npc-archetypes h2 {
+    font-family: 'Press Start 2P', monospace;
+    font-size: clamp(1.2rem, 3vw, 1.8rem);
+    color: var(--primary-green);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.archetypes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.npc-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(0, 255, 153, 0.3);
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+.npc-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary-green);
+    box-shadow: 0 10px 30px rgba(0, 255, 153, 0.2);
+}
+
+.npc-card h3 {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 1rem;
+    color: var(--primary-green);
+    margin-bottom: 15px;
+}
+
+.npc-quote {
+    font-style: italic;
+    color: var(--accent-teal);
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.npc-description {
+    color: var(--off-white);
+    opacity: 0.9;
+    line-height: 1.5;
+}
+
+/* FAQ Section */
+.faq-section {
+    padding: 80px 0;
+    background: rgba(43, 0, 58, 0.5);
+}
+
+.faq-section h2 {
+    font-family: 'Press Start 2P', monospace;
+    font-size: clamp(1.2rem, 3vw, 1.8rem);
+    color: var(--primary-green);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 8px;
+    padding: 25px;
+    border-left: 3px solid var(--accent-teal);
+}
+
+.faq-item h3 {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 0.9rem;
+    color: var(--accent-teal);
+    margin-bottom: 10px;
+}
+
+.faq-item p {
+    color: var(--off-white);
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Legal Disclaimer */
+.legal-disclaimer {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+.legal-disclaimer p {
+    font-size: 0.8rem;
+    color: var(--off-white);
+    opacity: 0.6;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.4;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .container {
@@ -231,6 +370,24 @@ footer {
     .footer-content {
         flex-direction: column;
         text-align: center;
+    }
+    
+    .archetypes-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .faq-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .npc-card {
+        padding: 20px;
+    }
+    
+    .faq-item {
+        padding: 20px;
     }
 }
 
